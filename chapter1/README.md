@@ -4,6 +4,10 @@
 ```bash
 docker build -t chapter1_image .
 ```
+## Run the container (Windows)
+```
+docker run -it --rm --name chapter1_container -e DISPLAY=host.docker.internal:0.0 chapter1_image
+```
 
 ## Run the container (Linux)
 Before running, allow Docker containers to connect to your X server so GUI apps like `rqt` and `turtlesim` can open:
