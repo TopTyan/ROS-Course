@@ -5,6 +5,7 @@
 docker build -t chapter1_image .
 ```
 ## Run the container (Windows)
+Run XLaunch and write this command
 ```
 docker run -it --rm --name chapter1_container -e DISPLAY=host.docker.internal:0.0 chapter1_image
 ```
